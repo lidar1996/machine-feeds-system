@@ -1,5 +1,5 @@
 from flask import jsonify
-from machine_configuration_service.app.models.machine_configuration import load_machine_configuration_from_file
+from app.models.machine_configuration import load_machine_configuration_from_file
 
 def get_machine_configuration_by_id(machine_id):
     """

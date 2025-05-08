@@ -1,5 +1,5 @@
 from flask import jsonify
-from session_service.app.models.session import load_sessions_from_file
+from app.models.session import load_sessions_from_file
 
 def get_sessions_by_machine_id(machine_id):
     """

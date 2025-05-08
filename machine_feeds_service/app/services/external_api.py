@@ -1,8 +1,8 @@
 import requests
 
-REPAIR_URL = "http://localhost:5002/repairs"
-SESSION_URL = "http://localhost:5003/sessions"
-MACHINE_CONFIGURATION_URL = "http://localhost:5001/machine_configurations"
+REPAIR_URL = "http://repair_service:5002/repairs"
+SESSION_URL = "http://session_service:5003/sessions"
+MACHINE_CONFIGURATION_URL = "http://machine_configuration_service:5001/machine_configurations"
 
 def get_machine_configuration(machine_id):
     """

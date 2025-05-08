@@ -1,0 +1,27 @@
+services:
+  api_gateway:
+    build: ./api_gateway
+    ports:
+      - "8080:80"
+    depends_on:
+      - machine_feeds_service
+
+  machine_configuration_service:
+    build: ./machine_configuration_service
+    ports:
+      - "5001:5001"
+
+  repair_service:
+    build: ./repair_service
+    ports:
+      - "5002:5002"
+
+  session_service:
+    build: ./session_service
+    ports:
+      - "5003:5003"
+
+  machine_feeds_service:
+    build: ./machine_feeds_service
+    ports:
+      - "5004:5004"

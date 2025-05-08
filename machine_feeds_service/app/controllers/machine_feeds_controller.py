@@ -1,5 +1,5 @@
 from flask import jsonify
-from machine_feeds_service.app.services.external_api import get_repairs, get_sessions, get_machine_configuration
+from app.services.external_api import get_repairs, get_sessions, get_machine_configuration
 
 def fetch_combined_feeds(machine_id):
     """

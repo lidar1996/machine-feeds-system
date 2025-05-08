@@ -1,5 +1,5 @@
 from flask import jsonify
-from repair_service.app.models.repair import load_repairs_from_file
+from app.models.repair import load_repairs_from_file
 
 def get_repairs_by_machine_id(machine_id):
     """
