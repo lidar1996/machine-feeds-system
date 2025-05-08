@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "created_at": "2024-01-01T00:00:00",
+    "data": {
+      "type": "Compressor",
+      "location": "Israel"
+    }
+  },
+  {
+    "id": "2",
+    "created_at": "2024-02-01T00:00:00",
+    "data": {
+      "type": "Pump",
+      "location": "USA"
+    }
+  }
+]
