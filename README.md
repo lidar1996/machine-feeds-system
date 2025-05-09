@@ -5,11 +5,16 @@
 2. Ports 5001–5004 and 8080 available on your machine
 
 # Download the Project:
+option 1 - Download ZIP
 1. Download the project as a ZIP file.
 2. Unzip the project folder to your local machine:
    ```unzip machine-feeds-system.zip```
-3. ```cd machine-feeds-system```
-4. Run the following command to build and start all services:
+option 2 - Clone from GitHub
+1. ```git clone https://github.com/lidar1996/machine-feeds-system.git```
+
+# Run the Project
+1. ```cd machine-feeds-system```
+2. Run the following command to build and start all services:
    ```docker-compose up --build```
 
 # This will:
