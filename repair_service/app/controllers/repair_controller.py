@@ -1,5 +1,9 @@
 from flask import jsonify
 from app.models.repair import load_repairs_from_file
+import logging
+
+# Set up logging
+logging.basicConfig(level=logging.DEBUG)
 
 def get_repairs_by_machine_id(machine_id):
     """
@@ -12,4 +16,5 @@ def get_repairs_by_machine_id(machine_id):
         machine_repairs = [repair.to_dict() for repair in repairs if repair.machine_id == machine_id]
         return jsonify(machine_repairs)
     except Exception as e:
+        logging.error(f"Error loading repairs: {e}")
         return jsonify({"error": str(e)}), 500

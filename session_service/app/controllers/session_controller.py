@@ -1,5 +1,9 @@
 from flask import jsonify
 from app.models.session import load_sessions_from_file
+import logging
+
+# Set up logging
+logging.basicConfig(level=logging.DEBUG)
 
 def get_sessions_by_machine_id(machine_id):
     """
@@ -12,4 +16,5 @@ def get_sessions_by_machine_id(machine_id):
         machine_sessions = [session.to_dict() for session in sessions if session.machine_id == machine_id]
         return jsonify(machine_sessions)
     except Exception as e:
+        logging.error(f"Error loading sessions: {e}")
         return jsonify({"error": str(e)}), 500
