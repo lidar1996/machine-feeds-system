@@ -5,12 +5,13 @@
 2. Ports 5001–5004 and 8080 available on your machine
 
 # Download the Project:
-option 1 - Download ZIP
+Option 1 - Download ZIP
 1. Download the project as a ZIP file.
 2. Unzip the project folder to your local machine:
    ```unzip machine-feeds-system.zip```
-option 2 - Clone from GitHub
-1. ```git clone https://github.com/lidar1996/machine-feeds-system.git```
+   
+Option 2 - Clone from GitHub
+```git clone https://github.com/lidar1996/machine-feeds-system.git```
 
 # Run the Project
 1. ```cd machine-feeds-system```
