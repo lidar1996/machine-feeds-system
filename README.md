@@ -2,7 +2,7 @@
 
 # Prerequisites:
 1. Docker & Docker Compose installed
-2. Ports 5001–5004 and 8080 available on your machine
+2. Ports 5001–5004, 8080 and 6379 available on your machine
 
 # Download the Project:
 Option 1 - Download ZIP
@@ -21,12 +21,20 @@ Option 2 - Clone from GitHub
 # This will:
 
 Build all microservices (machine_configuration_service, repair_service, session_service, machine_feeds_service).
+
 Start the services on the following ports:
+
 5001 → Machine Configuration Service
+
 5002 → Repair Service
+
 5003 → Session Service
+
 5004 → Machine Feeds Service
+
 8080 → API Gateway (Nginx)
+
+6379 → Redis
 
 # Accessing the API
 Send a GET request to:
