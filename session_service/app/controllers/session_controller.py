@@ -1,5 +1,5 @@
 from flask import jsonify
-from app.models.session import load_sessions_from_file
+from ..models.session import load_sessions_from_file
 import logging
 
 # Set up logging

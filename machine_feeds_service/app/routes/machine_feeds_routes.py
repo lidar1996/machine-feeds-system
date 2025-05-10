@@ -1,5 +1,5 @@
 from flask import Blueprint
-from app.controllers.machine_feeds_controller import fetch_combined_feeds
+from ..controllers.machine_feeds_controller import fetch_combined_feeds
 
 machine_feeds_bp = Blueprint('machine_feeds', __name__)
 

@@ -1,5 +1,5 @@
 from flask import Blueprint
-from app.controllers.machine_configuration_controller import get_machine_configuration_by_id
+from ..controllers.machine_configuration_controller import get_machine_configuration_by_id
 
 machine_configuration_bp = Blueprint('machine_configuration', __name__)
 

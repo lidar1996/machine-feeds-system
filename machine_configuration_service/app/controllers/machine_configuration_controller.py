@@ -1,5 +1,5 @@
 from flask import jsonify
-from app.models.machine_configuration import load_machine_configuration_from_file
+from ..models.machine_configuration import load_machine_configuration_from_file
 import logging
 
 # Set up logging

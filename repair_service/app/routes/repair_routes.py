@@ -1,5 +1,5 @@
 from flask import Blueprint
-from app.controllers.repair_controller import get_repairs_by_machine_id
+from ..controllers.repair_controller import get_repairs_by_machine_id
 
 repair_bp = Blueprint('repair', __name__)
 

@@ -1,5 +1,5 @@
 from flask import jsonify
-from app.models.repair import load_repairs_from_file
+from ..models.repair import load_repairs_from_file
 import logging
 
 # Set up logging

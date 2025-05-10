@@ -1,5 +1,5 @@
 from flask import Blueprint
-from app.controllers.session_controller import get_sessions_by_machine_id
+from ..controllers.session_controller import get_sessions_by_machine_id
 
 session_bp = Blueprint('session', __name__)
 
